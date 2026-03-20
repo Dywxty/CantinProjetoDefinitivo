@@ -18,9 +18,6 @@ load_dotenv()
 app = Flask(__name__)
 CORS(app)
 
-app.config['SECRET_KEY'] = os.getenv('SECRET_KEY', 'sua-chave-secreta-aqui')
-app.config['JWT_SECRET'] = os.getenv('JWT_SECRET', 'sua-chave-jwt-aqui')
-
 # Configuração do banco de dados
 DB_CONFIG = {
     'host': os.getenv('DB_HOST', 'localhost'),
