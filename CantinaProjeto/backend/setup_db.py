@@ -8,11 +8,11 @@ from dotenv import load_dotenv
 load_dotenv()
 
 DB_CONFIG = {
-    'host': os.getenv('DB_HOST', 'localhost'),
-    'port': os.getenv('DB_PORT', '5432'),
-    'database': os.getenv('DB_NAME', 'cantina_db'),
-    'user': os.getenv('DB_USER', 'cantina_user'),
-    'password': os.getenv('DB_PASSWORD', 'cantina_pass')
+    'host': 'localhost',
+    'port': '5432',
+    'database': 'cantina_db',
+    'user': 'cantina_user',
+    'password': 'cantina_pass'
 }
 
 def setup_database():
