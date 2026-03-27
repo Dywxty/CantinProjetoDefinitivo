@@ -7,10 +7,26 @@ import os
 from dotenv import load_dotenv
 
 load_dotenv()
+import psycopg2
+import os
 
-PGHOST='ep-curly-truth-anfbnugb-pooler.c-6.us-east-1.aws.neon.tech'
-PGDATABASE='neondb'
-PGUSER='neondb_owner'
-PGPASSWORD='npg_Z9FCnYBH5zEp'
-PGSSLMODE='require'
-PGCHANNELBINDING='require'
+def get_connection():
+    if os.environ.get("PGHOST") == "localhost":
+        conn = psycopg2.connect(
+            host=os.environ.get("PGHOST"),
+            database=os.environ.get("PGDATABASE"),
+            user=os.environ.get("PGUSER"),
+            password=os.environ.get("PGPASSWORD"),
+            sslmode="PGSSLMODE",
+            channel_binding="PGCHANNELBINDING"
+        )
+    else:
+        conn = psycopg2.connect(
+            host=os.environ.get("PGHOST"),
+            database=os.environ.get("PGDATABASE"),
+            user=os.environ.get("PGUSER"),
+            password=os.environ.get("PGPASSWORD"),
+            sslmode=os.environ.get("PGSSLMODE"),
+            channel_binding=os.environ.get("PGCHANNELBINDING")
+        )
+    return conn
