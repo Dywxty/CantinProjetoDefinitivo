@@ -1,3 +1,10 @@
+<<<<<<< HEAD
+=======
+// =============================================
+// CANTINA ESCOLAR - PAINEL ECONÔMICO
+// Extensão do app.js para controle financeiro
+// =============================================
+>>>>>>> ec2fc010db436ca6520369399d30f2559def0848
 
 /**
  * Renderiza a página de controle econômico do aluno

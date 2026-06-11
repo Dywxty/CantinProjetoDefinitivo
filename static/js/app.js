@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 /// ===== BANCO DE DADOS (localStorage) =====
+=======
+
+// ===== BANCO DE DADOS (localStorage) =====
+>>>>>>> ec2fc010db436ca6520369399d30f2559def0848
 const DB = {
   get: (key) => {
     try {

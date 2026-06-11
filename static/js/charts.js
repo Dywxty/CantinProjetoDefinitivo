@@ -1,3 +1,9 @@
+<<<<<<< HEAD
+=======
+// =============================================
+// CANTINA ESCOLAR - GRÁFICOS E VISUALIZAÇÕES
+// =============================================
+>>>>>>> ec2fc010db436ca6520369399d30f2559def0848
 
 /**
  * Renderiza um gráfico de barras simples em SVG
