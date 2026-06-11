@@ -1,0 +1,193 @@
+╔════════════════════════════════════════════════════════════════════════════╗
+║          CANTINA ESCOLAR - GUIA RÁPIDO DE INSTALAÇÃO                      ║
+║                                                                            ║
+║  Backend: Python Flask + PostgreSQL                                       ║
+║  Frontend: HTML, CSS, JavaScript Puro                                     ║
+║  Banco: SQL (PostgreSQL)                                                  ║
+╚════════════════════════════════════════════════════════════════════════════╝
+
+📦 ARQUIVO RECEBIDO
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+cantina-completo-python.zip (48 KB)
+
+Contém:
+  ✅ Frontend HTML/CSS/JS (seu projeto original)
+  ✅ Backend Python Flask
+  ✅ Schema SQL PostgreSQL
+  ✅ Arquivo de configuração
+  ✅ Script de setup do banco
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+⚡ SETUP EM 5 MINUTOS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+PASSO 1: Extrair ZIP
+  1. Clicar direito em cantina-completo-python.zip
+  2. Selecionar "Extrair tudo"
+  3. Escolher pasta (ex: C:\cantina-escolar)
+
+PASSO 2: Instalar Python e PostgreSQL
+  
+  Python:
+    - Baixar: https://www.python.org/downloads/
+    - Marcar "Add Python to PATH"
+  
+  PostgreSQL:
+    - Baixar: https://www.postgresql.org/download/windows/
+    - Lembrar a senha do postgres
+
+PASSO 3: Criar Usuário e Banco no PostgreSQL
+  
+  Abrir CMD como Administrador:
+  
+  psql -U postgres
+  (Digite a senha)
+  
+  Copiar e colar (uma linha por vez):
+  
+  CREATE USER cantina_user WITH PASSWORD 'cantina_pass';
+  CREATE DATABASE cantina_db OWNER cantina_user;
+  ALTER ROLE cantina_user SET client_encoding TO 'utf8';
+  ALTER ROLE cantina_user SET default_transaction_isolation TO 'read committed';
+  ALTER ROLE cantina_user SET default_transaction_deferrable TO on;
+  ALTER ROLE cantina_user SET timezone TO 'UTC';
+  GRANT ALL PRIVILEGES ON DATABASE cantina_db TO cantina_user;
+  \q
+
+PASSO 4: Instalar Dependências Python
+  
+  Abrir CMD na pasta do projeto:
+  
+  python -m venv venv
+  venv\Scripts\activate
+  pip install -r backend/requirements.txt
+
+PASSO 5: Configurar Banco de Dados
+  
+  python backend/setup_db.py
+  
+  Deve aparecer: ✅ Banco de dados configurado com sucesso!
+
+PASSO 6: Iniciar Backend
+  
+  python backend/main.py
+  
+  Deve aparecer:
+  * Running on http://127.0.0.1:5000
+
+PASSO 7: Iniciar Frontend (Novo Terminal)
+  
+  Abrir novo CMD na pasta do projeto:
+  
+  python -m http.server 8000
+  
+  Acessar: http://localhost:8000
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🔑 CONTAS DE TESTE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+ALUNOS:
+  Username: ana.silva        Senha: 123
+  Username: joao.santos      Senha: 123
+  Username: maria.oliveira   Senha: 123
+
+FUNCIONÁRIOS:
+  Username: admin            Senha: 123
+  Username: funcionario1     Senha: 456
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📁 ESTRUTURA
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+cantina-backend-python/
+├── backend/
+│   ├── main.py             # Backend Flask
+│   ├── schema.sql          # Banco de dados SQL
+│   ├── setup_db.py         # Setup do banco
+│   ├── requirements.txt    # Dependências Python
+│   └── .env                # Configuração
+│
+├── templates/
+│   └── index.html          # Frontend HTML
+│
+├── static/
+│   ├── css/style.css       # Estilos
+│   └── js/
+│       ├── app.js          # Lógica principal
+│       ├── api.js          # Cliente API
+│       ├── charts.js       # Gráficos
+│       └── economico.js    # Painel econômico
+│
+└── LEIA-ME.txt             # Documentação completa
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🌐 URLS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Frontend:   http://localhost:8000
+Backend:    http://localhost:5000
+API Health: http://localhost:5000/api/health
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🆘 PROBLEMAS?
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+❌ "python is not recognized"
+   → Reinstalar Python com "Add Python to PATH"
+
+❌ "psql is not recognized"
+   → Adicionar ao PATH: C:\Program Files\PostgreSQL\15\bin
+
+❌ "ModuleNotFoundError"
+   → pip install -r backend/requirements.txt
+
+❌ "Erro ao conectar ao banco"
+   → Verificar se PostgreSQL está rodando
+   → Verificar credenciais em backend/.env
+
+❌ "Port 5000 already in use"
+   → Matar processo: netstat -ano | findstr :5000
+   → Ou mudar porta em backend/.env
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📚 ARQUIVOS IMPORTANTES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+backend/main.py
+  - Aplicação Flask
+  - Rotas da API
+  - Autenticação JWT
+  - Integração PostgreSQL
+
+backend/schema.sql
+  - Tabelas do banco
+  - Dados iniciais
+  - Índices
+
+static/js/api.js
+  - Cliente HTTP
+  - Funções para chamar backend
+  - Gerenciamento de token
+
+static/js/app.js
+  - Lógica do frontend
+  - Renderização de páginas
+  - localStorage como fallback
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✨ PRONTO!
+
+Siga os 7 passos acima e seu projeto estará rodando.
+
+Para mais detalhes, leia o arquivo LEIA-ME.txt dentro da pasta.
+
+Bom desenvolvimento! 🚀
