@@ -1,7 +1,3 @@
-// =============================================
-// CANTINA ESCOLAR - LÓGICA PRINCIPAL
-// Projeto II - Letícia, Giovana e Henrique C.
-// =============================================
 
 // ===== BANCO DE DADOS (localStorage) =====
 const DB = {

@@ -1,5 +1,3 @@
-// API CLIENT - Integração com Backend Flask
-// Cantina Escolar - Projeto II
 
 const API_URL = 'http://localhost:5000/api';
 let authToken = localStorage.getItem('cantina_auth_token');

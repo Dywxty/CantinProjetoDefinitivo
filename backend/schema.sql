@@ -1,5 +1,3 @@
--- CANTINA ESCOLAR - SCHEMA PostgreSQL
--- Projeto II - Letícia, Giovana e Henrique C.
 
 -- Criar extensões
 CREATE EXTENSION IF NOT EXISTS "uuid-ossp";

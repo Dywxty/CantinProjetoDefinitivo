@@ -1,13 +1,9 @@
-/* =============================================
-    CANTINA ESCOLAR - ESTILOS PRINCIPAIS
-    Projeto II - Letícia, Giovana e Henrique C.
-   ============================================= */
 
 :root {
-  --amarelo-principal: #FFD600;
-  --amarelo-escuro: #F9A800;
+  --amarelo-principal: #f3de77;
+  --amarelo-escuro: #fabf47;
   --amarelo-claro: #FFF8DC;
-  --amarelo-hover: #FFE033;
+  --amarelo-hover: =#FFE033;
   --marrom: #5C3D11;
   --marrom-claro: #8B5E2A;
   --branco: #FFFFFF;
@@ -17,10 +13,10 @@
   --preto: #1A1A1A;
   --verde: #2ECC71;
   --verde-escuro: #27AE60;
-  --vermelho: #E74C3C;
+  --vermelho: #f92c15;
   --vermelho-escuro: #C0392B;
   --azul: #3498DB;
-  --laranja: #E67E22;
+  --laranja: #f89c4d;
   --sombra: 0 4px 15px rgba(0,0,0,0.1);
   --sombra-hover: 0 8px 25px rgba(0,0,0,0.15);
   --radius: 12px;

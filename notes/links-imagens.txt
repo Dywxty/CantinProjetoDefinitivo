@@ -1,0 +1,30 @@
+URLS DAS IMAGENS GERADAS PARA O CARDÁPIO
+=========================================
+
+Use as URLs abaixo nos seus cards de produtos no HTML/JavaScript.
+Copie a URL "Compressed" (WebP) para melhor performance.
+
+COXINHA
+-------
+Original: https://d2xsxph8kpxj0f.cloudfront.net/310519663371155012/g4WZPWDMSm4WwL832qVbTt/coxinha-WpyoNTEr9DCmUzLVX5M4QM.png
+Compressed: https://d2xsxph8kpxj0f.cloudfront.net/310519663371155012/g4WZPWDMSm4WwL832qVbTt/coxinha-YBcxkqanK2mJVvZTkYAgrP.webp
+
+SUCO NATURAL
+-----------
+Original: https://d2xsxph8kpxj0f.cloudfront.net/310519663371155012/g4WZPWDMSm4WwL832qVbTt/suco-muRHtRkgmzrnZwpgQpGTLs.png
+Compressed: https://d2xsxph8kpxj0f.cloudfront.net/310519663371155012/g4WZPWDMSm4WwL832qVbTt/suco-EfJnKj2uNu8FJB4KCwi5DC.webp
+
+HAMBÚRGUER
+----------
+Original: https://d2xsxph8kpxj0f.cloudfront.net/310519663371155012/g4WZPWDMSm4WwL832qVbTt/hamburger-gFjMWQD7YqbHk22H7mxuRQ.png
+Compressed: https://d2xsxph8kpxj0f.cloudfront.net/310519663371155012/g4WZPWDMSm4WwL832qVbTt/hamburger-KX4a8vte2YtBJF8VDd3MTx.webp
+
+REFRIGERANTE
+------------
+Original: https://d2xsxph8kpxj0f.cloudfront.net/310519663371155012/g4WZPWDMSm4WwL832qVbTt/refrigerante-CjtBarLEKtEmfGHxpwhDhP.png
+Compressed: https://d2xsxph8kpxj0f.cloudfront.net/310519663371155012/g4WZPWDMSm4WwL832qVbTt/refrigerante-6PxUXL5XJ9h575ooKLu2wf.webp
+
+ALMOÇO (ARROZ, FEIJÃO, BIFE)
+----------------------------
+Original: https://d2xsxph8kpxj0f.cloudfront.net/310519663371155012/g4WZPWDMSm4WwL832qVbTt/almoco-nZACKgcXDCmUzLVX5M4QM.png
+Compressed: https://d2xsxph8kpxj0f.cloudfront.net/310519663371155012/g4WZPWDMSm4WwL832qVbTt/almoco-VWtrPr3ZWFBnMyNNzjaWYZ.webp
