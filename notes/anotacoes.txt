@@ -1,0 +1,38 @@
+Cardápio: 
+--------salgados: (todos são R$6,00)
+-coxinha
+-enroladinho de chocolate
+-enroladinho de presunto
+-rissoles
+-bauru
+-enroladinho de calabresa
+-esfirra de frango
+-esfirra de carne
+-esfirra 3 queijos
+-pão de queijo
+-esfirra aberta
+
+----------lanches: (todos são 12,00)
+-x-tudo
+-x-salada
+-x-bacon
+-lanche natural
+-sanduiche simples
+-sanduiche de atum
+
+----------bebidas:
+-café (R$2,50)
+-suco artificial (R$3,50)
+-suco natural (R$6,00)
+-refri 300ml (R$5,50)
+-refri 2l (R$15,00)
+-energético (R$12,00)
+
+----------almoços: (todos são R$25,00)
+(carrossel com o almoço do dia da semana)
+exemplos -> lasanha, arroz feijão e bife, strogonoff arroz e batata palha, macarronada...
+
+--------utencilios:
+-copo descartável (R$1,50)
+-colher descartável (R$--)
+-garfo e faca - almoço (R$--)
