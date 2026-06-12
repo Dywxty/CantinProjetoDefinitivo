@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cantina Escolar — Projeto II</title>
   <meta name="description" content="Sistema de pedidos online da cantina escolar. Peça sem fila, receba seu ticket!">
   <meta name="theme-color" content="#FFD600">
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍽️</text></svg>">
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍽️</text></svg>">
   <link rel="stylesheet" href="../static/css/style.css">
 </head>
+
 <body>
 
   <!-- ===== NAVBAR ===== -->
@@ -36,7 +39,8 @@
   <div class="sidebar-mobile" id="sidebar-mobile">
     <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1.5rem">
       <span style="font-size:1.2rem;font-weight:800;color:var(--marrom)">🍽️ Menu</span>
-      <button onclick="toggleSidebar()" style="background:none;border:none;font-size:1.3rem;cursor:pointer;color:var(--marrom)">✕</button>
+      <button onclick="toggleSidebar()"
+        style="background:none;border:none;font-size:1.3rem;cursor:pointer;color:var(--marrom)">✕</button>
     </div>
     <div id="sidebar-links">
       <!-- Preenchido dinamicamente -->
@@ -55,23 +59,23 @@
   <div id="toast-container" class="toast-container"></div>
 
   <!-- ===== SCRIPTS ===== -->
-  <script src="../static/js/charts.js"></script>
-  <script src="../static/js/economico.js"></script>
-  <script src="../static/js/app.js"></script>
+  <script src="{{ url_for('static', filename='js/charts.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/economico.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/app.js') }}"></script>
   <script>
     // ===== INTEGRAÇÃO: ROTA ECONÔMICO =====
     // Sobrescrever renderPage para incluir a rota 'economico'
     const _renderPageOriginal = renderPage;
-    
+
     // Patch do roteador para incluir página econômica
     const _originalSwitch = renderPage;
-    
+
     // Adicionar rota de econômico ao switch do app.js
     // Isso é feito sobrescrevendo a função após o carregamento
     document.addEventListener('DOMContentLoaded', () => {
       // Patch: adicionar rota econômico
       const originalRender = window.renderPage;
-      window.renderPage = function(page, params = {}) {
+      window.renderPage = function (page, params = {}) {
         if (page === 'economico') {
           STATE.currentPage = 'economico';
           const main = document.getElementById('main-content');
@@ -92,7 +96,7 @@
 
       // Patch: atualizar navbar para incluir link econômico
       const originalUpdateNavbar = window.updateNavbar;
-      window.updateNavbar = function() {
+      window.updateNavbar = function () {
         originalUpdateNavbar();
         // Atualizar brand com link correto
         const brand = document.getElementById('navbar-brand');
@@ -172,4 +176,5 @@
     });
   </script>
 </body>
+
 </html>
