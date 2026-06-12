@@ -12,7 +12,11 @@ from functools import wraps
 
 load_dotenv()
 
-app = Flask(__name__, template_folder="../templates", static_folder="../static")
+app = Flask(
+    __name__,
+    template_folder="templates",
+    static_folder="static"
+)
 CORS(app)
 
 app.config['JWT_SECRET'] = os.getenv('JWT_SECRET', 'jwt-secret')
@@ -195,4 +199,5 @@ def health():
 # =========================
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    port = int(os.environ.get("PORT", 10000))
+    app.run(host="0.0.0.0", port=port)
